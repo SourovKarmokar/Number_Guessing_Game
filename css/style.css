@@ -1,4 +1,4 @@
-.box1{
+.box1 ,.playerOneBox{
     width: 700px;
     margin: 0 auto;
     text-align: center;
@@ -19,4 +19,8 @@ button{
     border-radius: 5px;
     font-weight: bold;
     font-size: 25px;
+}
+.box1Err {
+    color: red;
+    font-size: 20px;
 }
