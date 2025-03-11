@@ -23,7 +23,7 @@ startButton.addEventListener("click", function () {
 const playerTwoBox = document.querySelector(".playerTwoBox");
 playerTwoBox.style.display = "none";
 const playerTwoButton = document.querySelector(".playerTwoButton")
-const playerTwoInput = document.querySelector("playerTwoInput");
+const playerTwoInput = document.querySelector(".playerTwoInput");
 
 playerOneButton.addEventListener("click", function () {
   if (playerOneErr.value == "") {
@@ -36,13 +36,19 @@ playerOneButton.addEventListener("click", function () {
 });
 
 
-playerTwoButton.addEventListener("click" , function(){
-    if(playerTwoInput.value == ""){
-       let pTag = document.createElement("p")
-       pTag.innerHTML = "Give the Guessing Number";
-       playerTwoBox.append(pTag)
+playerTwoButton.addEventListener("click", function () {
+    if (playerTwoInput.value == "") {
+      let pTag = document.createElement("p");
+      pTag.innerHTML = "Give the Guessing Number";
+      playerTwoBox.append(pTag);
     }else{
-        if(playerOneInput.value == playerTwoInput.value)
-            console.log("Player One win ");
+        if(playerOneInput.value == playerTwoInput.value){
+            console.log("Player Two win ");
+
+        }else{
+            console.log("Player One Win");
+            
+    }
+        
     }
 })
